@@ -78,7 +78,7 @@ class DetailUserViewModel: ViewModel() {
             ) {
                 _isLoadingUser.value = false
                 if(response.isSuccessful){
-                    _userFollower.value = response.body()
+                    _userFollowing.value = response.body()
                 } else {
                     Log.e(TAG, "onFailure: ${response.code()}")
                 }
